@@ -4,6 +4,17 @@
 *{
     font-family: "Open Sans", sans-serif;
 }
+/* shared style
+ */
+ .text-center{
+    text-align: center;
+
+ }
+ .text-color-d2{
+    color: #757575;
+ }
+
+ /* header section */
  .header{
     background-image: url(/images/developer.png),url(/images/header_bg.png);
     background-repeat: no-repeat;
@@ -87,4 +98,95 @@ main{
 .about-items-title{
     margin-top: 0px;
     padding-top: 0px;
+}
+/* skills section style */
+.skills-description{
+    padding: 30px 150px;
+}
+
+.skills{
+    display: flex;
+    gap: 24px;
+    padding: 70px 180px;
+    background-color: #FFFFFF;
+    
+}
+.skill{
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    text-align: start;
+    border-radius: 5px;
+}
+.skill p{
+    font-size: 14px;
+}
+/* resume section style */
+
+.resume-content{
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+}
+.education-area , .experience-area{
+    width: 50%;
+}
+.resume-container h3,h5,p{
+   margin-bottom: 0px;
+}
+.center-align{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+/* footer section style */
+footer{
+    background-color: #FFF8F3;
+    margin-top: 100px;
+}
+.footer-content{
+    padding: 120px 230px;
+    
+}
+.footer-text{
+    
+    width: 40%;
+}
+.form-container{
+    width: 40%;
+   
+}
+.icons-section{
+    margin-top: 20px;
+}
+.footer-content{
+    display: flex;
+    gap: 100px;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-content input[type="text"],input[type="email"]{
+    height: 50px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+}
+textarea{
+    height: 150px;
+    width: 350px;
+    border: none;
+    padding: 5px;
+}
+.submit-button{
+    margin-top: 20px;
 }
