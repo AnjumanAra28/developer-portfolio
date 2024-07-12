@@ -65,10 +65,12 @@ nav>ul>li a{
     max-width: 500px;
     margin-left: 150px;
 }
-.dev-picture{
+.dev-picture {
    width: 500px;
 }
-
+.dev-picture img{
+    width: 100%;
+}
 /* about section style */
 main{
     max-width: 1100px;
@@ -190,26 +192,6 @@ textarea{
 /* media query for small devices */
 
 @media screen and (max-width:576px) {
-    .skills{
-        flex-direction: column;
-        padding: 5px;
-    }
-    .skills-description{
-        padding: 5px;
-    }
-    .skill{
-        padding: 5px;
-    }
-    .resume-content , .footer-content{
-        flex-direction: column;
-    }
-    .education-area , .experience-area ,.footer-text ,.form-container{
-       width: 100%;
-    }
-    .footer-content{
-        padding: 10px;
-        gap: 20px;
-    }
     .dev-details{
         flex-direction: column-reverse;
     }
@@ -224,4 +206,49 @@ textarea{
         margin: 0;
         padding: 20px;
     }
+    .skills{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .skills-description{
+        padding: 5px;
+    }
+    .skill , .about-content{
+        padding: 5px;
+    }
+    .resume-content , .footer-content, .about-items{
+        flex-direction: column;
+    }
+    .education-area , .experience-area ,.footer-text ,.form-container{
+       width: 100%;
+    }
+    .footer-content{
+        padding: 10px;
+        gap: 20px;
+    }
+}
+
+/* for medium screen responsive */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .dev-details{
+        flex-direction: column;
+    }
+    .dev-picture{
+       width: 100%;
+    }
+    .dev-picture img{
+        width: 100%;
+    }
+    .skills{
+        flex-wrap: wrap;
+    }
+    .footer-content{
+        flex-direction: column;
+        gap: 5px;
+        padding: 20px;
+    }
+    .footer-text , .form-container{
+        width: 100%;
+    }
+    
 }
